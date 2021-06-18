@@ -10,16 +10,19 @@ def id_num(self):
 
     try:
         if age >= 18:
-            messagebox.showinfo('Status', 'Let's Play!')
-            window.destroy()
+            print("Status", "Let's Play!")
+            # messagebox.showinfo("Status", "Let's Play!")
+            # None window.destroy()
 
-        else age < 18:
-            messagebox.showinfo("You are too young to play. Please try again in the next 'x' years.")
-            window.destroy()
+        elif age < 18:
+            print("You are too young to play. Please try again in the next 'x' years.")
+            # messagebox.showinfo("You are too young to play. Please try again in the next 'x' years.")
+            # window.destroy()
 
         # elif len(self.id_ent.get()) != 18:
         #     messagebox.showerror("Error", "Not a valid ID number")
         #     window.destroy()
         except ValueError:
             if self.id_ent.get() != int:
-                messagebox.showerror("ERROR!, Invalid ID number.")
+                print("ERROR!, Invalid ID number.")
+                # messagebox.showerror("ERROR!, Invalid ID number.")

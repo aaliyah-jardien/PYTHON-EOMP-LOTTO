@@ -80,7 +80,6 @@ postal_code_entry.place(x=450, y=730)
 
 
 # FUNCTIONS
-# email validation
 def register():
     id_numb()
     register2()
@@ -91,7 +90,7 @@ def register():
     # email validation
     for i in range(len(email_entry.get())):
         if re.search(ex, email_entry.get()):
-            with open("text_file2.txt", "a") as f:
+            with open("text_file.txt", "a") as f:
                 f.write(email_entry.get())
                 f.write('\n')
 
@@ -130,7 +129,7 @@ def id_numb():
 def register2():
 
     answers = ""
-    my_file = open("text_file2.txt", 'a')
+    my_file = open("text_file.txt", 'a')
     answers += "Full name : " + name_entry.get()
     answers += '\n'
     answers += "RSA ID no : " + id_entry.get()

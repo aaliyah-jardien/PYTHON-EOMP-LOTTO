@@ -6,18 +6,19 @@ import random
 window = Tk()
 window.geometry("800x850")
 window.title("Lottery Number Generator")
-window.config(bg="red")
+window.config(bg="grey")
 # window.resizable(0, 0)
 
 # FRAME
-#my_frame = Frame(window, bg="#E5253A")
-#my_frame.place(x=0, y=0, width=500, height=500)
+# my_frame = Frame(window, bg="#E5253A")
+# my_frame.place(x=0, y=0, width=500, height=500)
 
 # IMAGE
-img = PhotoImage(file="img-2.png")
+img = PhotoImage(file="images/img-2.png")
 canvas = Canvas(window, width=801, height=301, highlightthickness="0")
 canvas.create_image(0, 0, anchor=NW, image=img)
 canvas.place(x=0, y=100)
+
 
 # DECLARING MY FUNCTIONS (the variables are also assigned to values)
 def lotto_number():
@@ -64,17 +65,17 @@ frame2 = Frame(window)
 frame2.pack(side=TOP)
 
 # ENTRIES (text boxes)
-txtDisplay = Entry(frame2, textvariable=num1, bd=20, insertwidth=1, font="Arial 30", justify="center", width=4)
+txtDisplay = Entry(frame2, textvariable=num1, bd=10, insertwidth=1, font="Arial 30", justify="center", width=4, bg="red")
 txtDisplay.pack(side=LEFT)
-txtDisplay = Entry(frame2, textvariable=num2, bd=20, insertwidth=1, font="Arial 30", justify="center", width=4)
+txtDisplay = Entry(frame2, textvariable=num2, bd=10, insertwidth=1, font="Arial 30", justify="center", width=4, bg="orange")
 txtDisplay.pack(side=LEFT)
-txtDisplay = Entry(frame2, textvariable=num3, bd=20, insertwidth=1, font="Arial 30", justify="center", width=4)
+txtDisplay = Entry(frame2, textvariable=num3, bd=10, insertwidth=1, font="Arial 30", justify="center", width=4, bg="yellow")
 txtDisplay.pack(side=LEFT)
-txtDisplay = Entry(frame2, textvariable=num4, bd=20, insertwidth=1, font="Arial 30", justify="center", width=4)
+txtDisplay = Entry(frame2, textvariable=num4, bd=10, insertwidth=1, font="Arial 30", justify="center", width=4, bg="lime")
 txtDisplay.pack(side=LEFT)
-txtDisplay = Entry(frame2, textvariable=num5, bd=20, insertwidth=1, font="Arial 30", justify="center", width=4)
+txtDisplay = Entry(frame2, textvariable=num5, bd=10, insertwidth=1, font="Arial 30", justify="center", width=4, bg="turquoise")
 txtDisplay.pack(side=LEFT)
-txtDisplay = Entry(frame2, textvariable=num6, bd=20, insertwidth=1, font="Arial 30", justify="center", width=4)
+txtDisplay = Entry(frame2, textvariable=num6, bd=10, insertwidth=1, font="Arial 30", justify="center", width=4, bg="purple")
 txtDisplay.pack(side=LEFT)
 
 frame3 = Frame(window)
